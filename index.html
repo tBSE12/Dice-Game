@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="center">
+        <h1>
+            Dice Roll Game
+        </h1>
+        <p><b>Reach "30" first</b></p>
+        Player 1 score: <span class="score" id="p1"></span>   <br><br>
+        Player 2 score: <span class="score" id="p2"></span>   <br><br>
+        Dice: <span class="score" id="current"></span> <br><br><br>
+        <button class="button" id="roll" onclick="rollDice()">ROLL</button> &emsp;&emsp;
+        <button id="reset" class="button" onclick="reset()">RESET</button>  <br><br>
+        <span id="winner"></span>   
+        <input type="hidden" id="turn" value="1">
+        <input type="hidden" id="p1score" value="0">
+        <input type="hidden" id="p2score" value="0">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
